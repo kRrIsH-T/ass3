@@ -1,0 +1,44 @@
+{
+  "model": "rnn",
+  "parameter_count": 272740,
+  "trainable_parameter_count": 272740,
+  "epochs_completed": 3,
+  "training_seconds": 3.478811599998153,
+  "best_validation_loss": 1.246258716583252,
+  "best_validation_accuracy": 0.435,
+  "test_loss": 1.2434371566772462,
+  "test_accuracy": 0.445,
+  "inference_examples_per_second": 3015.4785592407306,
+  "peak_gpu_memory_mb": 0.0,
+  "device": "cpu",
+  "checkpoint": "results\\quick\\checkpoints\\rnn.pt",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.377695490837097,
+      "train_accuracy": 0.307,
+      "validation_loss": 1.3623118114471435,
+      "validation_accuracy": 0.3,
+      "learning_rate": 0.001,
+      "seconds": 1.1536335999990115
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.3351658239364623,
+      "train_accuracy": 0.427,
+      "validation_loss": 1.3318528699874879,
+      "validation_accuracy": 0.35,
+      "learning_rate": 0.001,
+      "seconds": 1.2194414999976289
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.2603957138061523,
+      "train_accuracy": 0.435,
+      "validation_loss": 1.246258716583252,
+      "validation_accuracy": 0.435,
+      "learning_rate": 0.001,
+      "seconds": 1.0964132000008249
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "model": "rnn",
+  "parameter_count": 62660,
+  "trainable_parameter_count": 62660,
+  "epochs_completed": 1,
+  "training_seconds": 0.17949309999676188,
+  "best_validation_loss": 1.4463975429534912,
+  "best_validation_accuracy": 0.25,
+  "test_loss": 1.4467461109161377,
+  "test_accuracy": 0.25,
+  "inference_examples_per_second": 181.03725294480716,
+  "peak_gpu_memory_mb": 0.0,
+  "device": "cpu",
+  "checkpoint": "results\\smoke\\checkpoints\\rnn.pt",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.379070520401001,
+      "train_accuracy": 0.25,
+      "validation_loss": 1.4463975429534912,
+      "validation_accuracy": 0.25,
+      "learning_rate": 0.0003,
+      "seconds": 0.17561019999993732
+    }
+  ]
+}

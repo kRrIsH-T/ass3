@@ -1,0 +1,26 @@
+{
+  "model": "ssm",
+  "parameter_count": 109925,
+  "trainable_parameter_count": 109925,
+  "epochs_completed": 1,
+  "training_seconds": 0.42215520000172546,
+  "best_validation_loss": 1.4872483015060425,
+  "best_validation_accuracy": 0.25,
+  "test_loss": 1.4848740100860596,
+  "test_accuracy": 0.25,
+  "inference_examples_per_second": 63.35700245486744,
+  "peak_gpu_memory_mb": 0.0,
+  "device": "cpu",
+  "checkpoint": "results\\smoke\\checkpoints\\ssm.pt",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.6626625061035156,
+      "train_accuracy": 0.25,
+      "validation_loss": 1.4872483015060425,
+      "validation_accuracy": 0.25,
+      "learning_rate": 0.0003,
+      "seconds": 0.42004370000358904
+    }
+  ]
+}

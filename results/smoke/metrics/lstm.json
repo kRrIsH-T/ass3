@@ -1,0 +1,26 @@
+{
+  "model": "lstm",
+  "parameter_count": 247556,
+  "trainable_parameter_count": 247556,
+  "epochs_completed": 1,
+  "training_seconds": 0.15681679999397602,
+  "best_validation_loss": 1.3886616230010986,
+  "best_validation_accuracy": 0.25,
+  "test_loss": 1.3895230293273926,
+  "test_accuracy": 0.25,
+  "inference_examples_per_second": 182.00101013647176,
+  "peak_gpu_memory_mb": 0.0,
+  "device": "cpu",
+  "checkpoint": "results\\smoke\\checkpoints\\lstm.pt",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.4075833559036255,
+      "train_accuracy": 0.25,
+      "validation_loss": 1.3886616230010986,
+      "validation_accuracy": 0.25,
+      "learning_rate": 0.0003,
+      "seconds": 0.15431859999807784
+    }
+  ]
+}

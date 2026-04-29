@@ -1,0 +1,44 @@
+{
+  "model": "ssm",
+  "parameter_count": 284853,
+  "trainable_parameter_count": 284853,
+  "epochs_completed": 3,
+  "training_seconds": 13.897062800002459,
+  "best_validation_loss": 1.259669451713562,
+  "best_validation_accuracy": 0.4475,
+  "test_loss": 1.2557592248916627,
+  "test_accuracy": 0.435,
+  "inference_examples_per_second": 681.0060323753255,
+  "peak_gpu_memory_mb": 0.0,
+  "device": "cpu",
+  "checkpoint": "results\\quick\\checkpoints\\ssm.pt",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.3695380153656005,
+      "train_accuracy": 0.31,
+      "validation_loss": 1.3397106266021728,
+      "validation_accuracy": 0.365,
+      "learning_rate": 0.001,
+      "seconds": 5.034991799999261
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.3047422924041747,
+      "train_accuracy": 0.45,
+      "validation_loss": 1.3110644960403441,
+      "validation_accuracy": 0.3725,
+      "learning_rate": 0.001,
+      "seconds": 4.807982599995739
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.2487882957458496,
+      "train_accuracy": 0.506,
+      "validation_loss": 1.259669451713562,
+      "validation_accuracy": 0.4475,
+      "learning_rate": 0.001,
+      "seconds": 4.045914999995148
+    }
+  ]
+}

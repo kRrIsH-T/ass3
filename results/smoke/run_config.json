@@ -1,0 +1,48 @@
+{
+  "seed": 42,
+  "device": "auto",
+  "data": {
+    "output_dir": "results/smoke",
+    "max_length": 128,
+    "min_frequency": 2,
+    "max_vocab_size": 30000,
+    "validation_fraction": 0.1,
+    "batch_size": 4,
+    "num_workers": 0,
+    "max_train_samples": 20000,
+    "max_test_samples": null,
+    "offline_fallback": true,
+    "force_fallback": true
+  },
+  "training": {
+    "epochs": 1,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "patience": 1,
+    "min_delta": 0.0001,
+    "scheduler_patience": 1,
+    "scheduler_factor": 0.5,
+    "amp": true,
+    "inference_warmup_batches": 2,
+    "inference_batches": 1
+  },
+  "models": {
+    "rnn": {
+      "target": "benchmark.factories:rnn_classifier",
+      "params": {}
+    },
+    "lstm": {
+      "target": "benchmark.factories:lstm_classifier",
+      "params": {}
+    },
+    "ssm": {
+      "target": "benchmark.factories:ssm_classifier",
+      "params": {}
+    },
+    "transformer": {
+      "target": "benchmark.factories:transformer_classifier",
+      "params": {}
+    }
+  }
+}

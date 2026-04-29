@@ -1,0 +1,68 @@
+{
+  "seed": 42,
+  "device": "auto",
+  "data": {
+    "output_dir": "results/quick",
+    "max_length": 48,
+    "min_frequency": 2,
+    "max_vocab_size": 5000,
+    "validation_fraction": 0.1,
+    "batch_size": 64,
+    "num_workers": 0,
+    "max_train_samples": 1000,
+    "max_validation_samples": 400,
+    "max_test_samples": 400,
+    "offline_fallback": false,
+    "force_fallback": false
+  },
+  "training": {
+    "epochs": 3,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "patience": 2,
+    "min_delta": 0.0001,
+    "scheduler_patience": 1,
+    "scheduler_factor": 0.5,
+    "amp": true,
+    "inference_warmup_batches": 1,
+    "inference_batches": 6
+  },
+  "models": {
+    "rnn": {
+      "target": "benchmark.factories:rnn_classifier",
+      "params": {
+        "embedding_dim": 64,
+        "hidden_size": 96,
+        "dropout": 0.2
+      }
+    },
+    "lstm": {
+      "target": "benchmark.factories:lstm_classifier",
+      "params": {
+        "embedding_dim": 64,
+        "hidden_size": 96,
+        "dropout": 0.2
+      }
+    },
+    "ssm": {
+      "target": "benchmark.factories:ssm_classifier",
+      "params": {
+        "embedding_dim": 64,
+        "hidden_size": 96,
+        "state_size": 8,
+        "dropout": 0.2
+      }
+    },
+    "transformer": {
+      "target": "benchmark.factories:transformer_classifier",
+      "params": {
+        "hidden_size": 64,
+        "num_heads": 4,
+        "num_layers": 2,
+        "feedforward_size": 256,
+        "dropout": 0.2
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "model": "transformer",
+  "parameter_count": 397572,
+  "trainable_parameter_count": 397572,
+  "epochs_completed": 1,
+  "training_seconds": 0.08581369999592425,
+  "best_validation_loss": 1.4103689193725586,
+  "best_validation_accuracy": 0.25,
+  "test_loss": 1.4266529083251953,
+  "test_accuracy": 0.25,
+  "inference_examples_per_second": 387.50678145590814,
+  "peak_gpu_memory_mb": 0.0,
+  "device": "cpu",
+  "checkpoint": "results\\smoke\\checkpoints\\transformer.pt",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.2833882570266724,
+      "train_accuracy": 0.5,
+      "validation_loss": 1.4103689193725586,
+      "validation_accuracy": 0.25,
+      "learning_rate": 0.0003,
+      "seconds": 0.08177739999518963
+    }
+  ]
+}

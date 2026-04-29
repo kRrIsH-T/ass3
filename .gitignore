@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.test-deps/
+
+# Full experiment outputs and downloaded source data are reproducible.
+/outputs/
+/results/latest/
+/results/**/data/
+
+# Smoke checkpoints, metrics, plots, and tables under results/smoke remain trackable.

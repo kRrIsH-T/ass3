@@ -1,0 +1,46 @@
+seed: 42
+device: auto
+
+data:
+  output_dir: outputs
+  max_length: 128
+  min_frequency: 2
+  max_vocab_size: 30000
+  validation_fraction: 0.1
+  batch_size: 64
+  num_workers: 0
+  # A balanced subset makes the default run practical; set null for all 120k rows.
+  max_train_samples: 20000
+  max_validation_samples: null
+  max_test_samples: null
+  offline_fallback: true
+  force_fallback: false
+
+training:
+  epochs: 15
+  learning_rate: 0.0003
+  weight_decay: 0.01
+  gradient_clip: 1.0
+  patience: 3
+  min_delta: 0.0001
+  scheduler_patience: 1
+  scheduler_factor: 0.5
+  amp: true
+  inference_warmup_batches: 2
+  inference_batches: 20
+
+# Targets are import strings. The runner injects vocab_size/num_classes/padding_idx
+# when those names are present in the constructor. Adjust targets to model class names.
+models:
+  rnn:
+    target: benchmark.factories:rnn_classifier
+    params: {}
+  lstm:
+    target: benchmark.factories:lstm_classifier
+    params: {}
+  ssm:
+    target: benchmark.factories:ssm_classifier
+    params: {}
+  transformer:
+    target: benchmark.factories:transformer_classifier
+    params: {}
